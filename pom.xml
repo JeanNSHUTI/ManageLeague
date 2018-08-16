@@ -10,6 +10,11 @@
             <version>4.12</version>
         </dependency>
     </dependencies>
+    <dependency>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.7.9</version>
+    </dependency>
     <build>
         <plugins>
             <plugin>
@@ -19,7 +24,7 @@
                 <configuration>
                     <verbose>true</verbose>
                     <fork>true</fork>
-                    <executable>C:\Program Files (x86)\Java\jdk1.8.0_181</executable>
+                    <executable>C:\Program Files (x86)\Java\jdk1.8.0_181\bin</executable>
                     <compilerVersion>1.8</compilerVersion>
                 </configuration>
             </plugin>
