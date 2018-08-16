@@ -10,12 +10,19 @@
             <version>4.12</version>
         </dependency>
     </dependencies>
-    <properties>
-        <maven.compiler.source>3.8.0</maven.compiler.source>
-        <maven.compiler.target>3.8.0</maven.compiler.target>
-    </properties>
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <verbose>true</verbose>
+                    <fork>true</fork>
+                    <executable>C:\Program Files (x86)\Java\jdk1.8.0_181</executable>
+                    <compilerVersion>1.8</compilerVersion>
+                </configuration>
+            </plugin>
             <!--  JaCoCo code coverage -->
             <plugin>
                 <groupId>org.jacoco</groupId>
