@@ -10,7 +10,6 @@ Thumbs.db
 # Build Artifacts
 .gradle/
 build/
-target/*
 out/*
 bin/
 dependency-reduced-pom.xml
