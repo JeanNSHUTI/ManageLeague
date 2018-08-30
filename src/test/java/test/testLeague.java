@@ -2,7 +2,8 @@ package test;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
-//import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
+//Access Error: 404 -- Not Found
+//Cannot locate document: /port static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 //import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInAnyOrder;
 //import static org.hamcrest.collection.IsIterableContainingInOrder.contains;
 import static org.hamcrest.MatcherAssert.assertThat;
