@@ -9,10 +9,7 @@ Thumbs.db
 
 # Build Artifacts
 .gradle/
-build/
-out/*
-bin/
-dependency-reduced-pom.xml
+
 
 # Eclipse
 .settings
@@ -24,5 +21,3 @@ dependency-reduced-pom.xml
 *.ipr
 *.iws
 .idea
-/Test Results - testLeague.xml
-Test Results - testLeague.xml
