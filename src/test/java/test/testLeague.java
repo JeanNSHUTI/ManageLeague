@@ -2,8 +2,7 @@ package test;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
-//Access Error: 404 -- Not Found
-//Cannot locate document: /port static org.hamcrest.collection.IsCollectionWithSize.hasSize;
+//import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 //import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInAnyOrder;
 //import static org.hamcrest.collection.IsIterableContainingInOrder.contains;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -165,7 +164,7 @@ public class testLeague {
 
         int result = 0;
         String str_result1 = "";
-        String str_result2 = "6/12/2017"; //dates are rest to today's date
+        Date new_date = new Date(); //dates are rest to today's date
         DateFormat df = new SimpleDateFormat("d/M/yyyy");
 
         manageleague.League english_league = manageleague.League.getInstance();
@@ -173,8 +172,8 @@ public class testLeague {
 
         assertTrue("list of matches not reset", english_league.getList_of_matches().size() == result);
         assertTrue("list of teams not reset", english_league.getList_of_teams().size() == result);
-        assertThat("Date was not reset",df.format(english_league.getEnd_date()), is(str_result2));
-        assertThat("Date was not reset",df.format(english_league.getEnd_date()), is(str_result2));
+        assertThat("Date was not reset",df.format(english_league.getEnd_date()), is(df.format(new_date)));
+        assertThat("Date was not reset",df.format(english_league.getEnd_date()), is(df.format(new_date)));
         assertThat("Number of teams not reset",english_league.getNbr_teams(), is(result));
         assertThat("name not reset",english_league.getName(), is(str_result1));
     }
