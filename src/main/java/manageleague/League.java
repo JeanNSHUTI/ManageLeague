@@ -175,8 +175,6 @@ public class League implements Serializable {
     public void reset() {
     	name = "";
         nbr_teams= 0;
-        start_date = new Date();   //League season
-        end_date = new Date();
         list_of_teams.clear();
         list_of_matches.clear();
     }
