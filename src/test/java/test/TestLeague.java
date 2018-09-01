@@ -129,6 +129,8 @@ public class TestLeague {
         assertThat("start date for league",df.format(la_liga.getStart_date()), is(nullValue()));
         assertThat("end date for league",df.format(la_liga.getEnd_date()), is(nullValue()));
 
+        la_liga.reset();
+
     }
 
     /**
@@ -154,6 +156,7 @@ public class TestLeague {
         english_league.addTeams(team_name2);
 
         assertThat("Non-exisiting team",english_league.getTeam(not_team).getName(), is(not_team));
+        english_league.reset();
 
     }
 
@@ -164,7 +167,7 @@ public class TestLeague {
     public void testReset() {
 
         int result = 0;
-        String str_result1 = "noname";
+        String str_result1 = "";
         //Date new_date = new Date(); //dates are rest to today's date
         //DateFormat df = new SimpleDateFormat("d/M/yyyy");
 
@@ -177,6 +180,7 @@ public class TestLeague {
         //assertThat("Date was not reset",df.format(english_league.getEnd_date()), is(df.format(new_date)));
         assertThat("Number of teams not reset",english_league.getNbr_teams(), is(result));
         assertThat("name not reset",english_league.getName(), is(str_result1));
+        english_league.reset();
     }
 
     /**
@@ -203,6 +207,7 @@ public class TestLeague {
         assertThat("No team was added", english_league.getList_of_teams().size(), is(RESULT));
         assertThat("team1 was not added to list",english_league.getList_of_teams().get(0).getName(), is(team_name1));
         assertThat("team2 was not added to list",english_league.getList_of_teams().get(1).getName(), is(team_name2));
+        english_league.reset();
 
     }
 
@@ -235,6 +240,7 @@ public class TestLeague {
         assertThat("Date was not set",df.format(english_league.getList_of_matches().get(0).getMatch_date()), is(date));
         assertThat("Home team not defined",english_league.getList_of_matches().get(0).getHome_team().getName(), is(home_team));
         assertThat("Away team not defined",english_league.getList_of_matches().get(0).getAway_team().getName(), is(away_team));
+        english_league.reset();
     }
 
     //@testUpdateDB
