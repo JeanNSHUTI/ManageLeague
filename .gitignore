@@ -1,12 +1,3 @@
-# Operating System Files
-*.DS_Store
-Thumbs.db
-*.sw?
-.#*
-*#
-*~
-*.sublime-*
-
 # Build Artifacts
 .gradle/
 
