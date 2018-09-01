@@ -173,7 +173,7 @@ public class League implements Serializable {
     }
     
     public void reset() {
-    	name = "";
+    	name = "noname";
         nbr_teams= 0;
         list_of_teams.clear();
         list_of_matches.clear();

@@ -22,6 +22,7 @@ public class TestLeague {
 
     /**
      * Test Constructor method for {@link League#League()}.
+     * Tests different combinations for date setting.
      */
     @Test
     public void testLeagueConstruct() {
@@ -163,7 +164,7 @@ public class TestLeague {
     public void testReset() {
 
         int result = 0;
-        String str_result1 = "";
+        String str_result1 = "noname";
         //Date new_date = new Date(); //dates are rest to today's date
         //DateFormat df = new SimpleDateFormat("d/M/yyyy");
 
