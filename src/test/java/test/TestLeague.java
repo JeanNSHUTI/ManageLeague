@@ -92,7 +92,7 @@ public class TestLeague {
 
         //Case 1
         DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
-        String league_name = "English Premier Leaguee";
+        String league_name = "English Premier League";
         String start1 = "08-26-2017";
         String end1 = "05-26-2018";
 
