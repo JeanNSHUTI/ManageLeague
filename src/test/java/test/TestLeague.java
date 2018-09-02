@@ -102,7 +102,7 @@ public class TestLeague {
         la_liga.setEnd(end1);
 
 
-        //assertTrue("League name set", la_liga.getName() == league_name);
+        assertTrue("League name set", la_liga.getName() == league_name);
         assertThat("start date for league",df.format(la_liga.getStart_date()), is(nullValue()));
         assertThat("end date for league",df.format(la_liga.getEnd_date()), is(nullValue()));
 
@@ -179,7 +179,7 @@ public class TestLeague {
         //assertThat("Date was not reset",df.format(english_league.getEnd_date()), is(df.format(new_date)));
         //assertThat("Date was not reset",df.format(english_league.getEnd_date()), is(df.format(new_date)));
         assertThat("Number of teams not reset",english_league.getNbr_teams(), is(result));
-        //assertThat("name not reset",english_league.getName(), is(str_result1));
+        assertThat("name not reset",english_league.getName(), is(str_result1));
 
     }
 
@@ -204,7 +204,7 @@ public class TestLeague {
         english_league.addTeams(team_name1);
         english_league.addTeams(team_name2);
 
-        //assertThat("No team was added", english_league.getList_of_teams().size(), is(RESULT));
+        assertThat("No team was added", english_league.getList_of_teams().size(), is(RESULT));
         assertThat("team1 was not added to list",english_league.getList_of_teams().get(0).getName(), is(team_name1));
         assertThat("team2 was not added to list",english_league.getList_of_teams().get(1).getName(), is(team_name2));
         english_league.reset();

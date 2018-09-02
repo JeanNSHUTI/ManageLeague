@@ -174,6 +174,7 @@ public class League implements Serializable {
     
     public void reset() {
     	//this.setName("nostradamous");
+        this.name = "";
         nbr_teams= 0;
         list_of_teams.clear();
         list_of_matches.clear();
