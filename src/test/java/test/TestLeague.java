@@ -180,6 +180,7 @@ public class TestLeague {
         //assertThat("Date was not reset",df.format(english_league.getEnd_date()), is(df.format(new_date)));
         assertThat("Number of teams not reset",english_league.getNbr_teams(), is(result));
         //assertThat("name not reset",english_league.getName(), is(str_result1));
+        english_league.reset();
 
     }
 
