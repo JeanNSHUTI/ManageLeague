@@ -198,6 +198,8 @@ public class TestLeague {
 
         manageleague.League english_league = manageleague.League.getInstance();
         english_league.reset();
+        english_league.getList_of_matches().clear();
+        english_league.getList_of_teams().clear();
         english_league.setName(league_name);
         english_league.setStart(start);
         english_league.setEnd(end);
