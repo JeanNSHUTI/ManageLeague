@@ -1,5 +1,5 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/303699f32938423fb10b35f32169a241)](https://www.codacy.com/app/JeanNSHUTI/ManageLeague?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JeanNSHUTI/ManageLeague&amp;utm_campaign=Badge_Grade)
-
+[![Build Status](https://travis-ci.org/JeanNSHUTI/ManageLeague.svg?branch=master)](https://travis-ci.org/JeanNSHUTI/ManageLeague.svg?branch=master)
 # ManageLeague
 
 ## Contributors
